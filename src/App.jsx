@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home/Home';
 import Sidecart from './components/Sidecart/Sidecart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [watchTime, setWatchTime] = useState('');
@@ -43,7 +45,7 @@ function App() {
         <div className="sideCart col-md-4 card">
           <Sidecart watchTime={watchTime} ></Sidecart>
         </div>
-
+        <ToastContainer></ToastContainer>
       </div>
 
     </div>
